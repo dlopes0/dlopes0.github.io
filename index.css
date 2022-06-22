@@ -3,6 +3,10 @@
     src: url(assets/fonts/IBM-Plex-Sans/IBMPlexSans-Regular.ttf) format('truetype');
 }
 
+body {
+    font-size: 100%;
+  }
+
 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: small;
