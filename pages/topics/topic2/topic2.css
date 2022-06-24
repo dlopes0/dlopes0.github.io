@@ -27,18 +27,6 @@ hr {
     margin-bottom: 30px;
 } 
 
-.largerbox {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin: 0;
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #63C5DA;
-}
-
 .languagebox {
     box-sizing: border-box;
     border: 1px solid black;
@@ -75,16 +63,8 @@ hr {
     text-align: center;
     border: 1px solid black;
     border-radius: 8px;
-    margin: 2px;
+    margin: 0;
     padding: 10px;
-    background-color: #FFFFFF;
-}
-
-.image {
-    max-width: 100%;
-    max-height: 100%;
-    width: 500px;
-    height: 500px;
 }
 
 .menubar {
@@ -99,3 +79,14 @@ hr {
     flex-grow: 1;
     text-align: justify;
 }
+
+.bigtextbox {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #D0F0C0;
+}
+  
