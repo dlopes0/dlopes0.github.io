@@ -52,21 +52,21 @@
                 Determinar até, a distância entre duas paredes de casa. Ou talvez, um robot que se esquiva de obstáculos.</p>
             <p class="regfont">Existem vários modelos de Raspberry Pi:</p>
             <h5 class="header">Raspberry Pi (2012-2014)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypioriginal.jpg" alt="Uma imagem mostrando um Raspberry Pi original." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypioriginal.jpg" alt="Uma imagem mostrando um Raspberry Pi original." class="image" width="500">
             <p class="regfont">Sendo um modelo mais antigo (o primeiro!), não tem acesso à rede sem fios (por wireless), tem um processador mais fraquinho e menos memória (entre 256MB e 512MB).</p>
             <p class="regfont">Tem também, ao contrário dos outros Raspberry Pi, 26 pinos - as tais portas controláveis que referi anteriormente.</p>
             <p class="regfont">Já foi descontinuado, sendo agora muito dificil de encontrar e comprar.</p>
             <h5 class="header">Raspberry Pi 2 (2015)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypi2b.jpg" alt="Uma imagem mostrando um Raspberry Pi 2B." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypi2b.jpg" alt="Uma imagem mostrando um Raspberry Pi 2B." class="image" width="500">
             <p class="regfont">Já tem um processador superior em comparação ao computador anterior, e tem muito mais memória (1GB, duas vezes 512MB ou até quatro vezes 256MB!).</p>
             <p class="regfont">Assim como os Raspberry Pi mais modernos, já tem quarenta pinos ao contrário do anterior.</p>
             <h5 class="header">Raspberry Pi Zero (2015)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypizero.jpeg" alt="Uma imagem mostrando um Raspberry Pi Zero." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypizero.jpeg" alt="Uma imagem mostrando um Raspberry Pi Zero." class="image" width="500">
             <p class="regfont">É uma versão ultra pequena do primeiro Raspberry Pi. E como tal, tem o mesmo processador, a mesma quantidade de memória, mas tem quarenta pinos.</p>
             <p class="regfont">A semelhança do primeiro, não tem ligação WiFi.</p>
             <p class="regfont">Infelizmente, sendo muito pequeno não tem porta de rede para ligarmos ao router de casa ou até mesmo a uma ficha de rede algures em casa.</p>
             <h5 class="header">Raspberry Pi 3 (2016-2018)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypi3bplus.png" alt="Uma imagem mostrando um Raspberry Pi 3B+." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypi3bplus.png" alt="Uma imagem mostrando um Raspberry Pi 3B+." class="image" width="500">
             <p class="regfont">Tem três versões com o mesmo processador melhorado em comparação aos anteriores - o B, o A+ e o B+.</p>
             <p class="regfont">A versão mais antiga é a "B". Possui 1GB de memória, porta de rede, WiFi, e 40 pinos.</p>
             <p class="regfont">A versão mais compacta é a "A". Possui 512MB de memória, não tem porta de rede, mas tem WiFi, e 40 pinos. É uma versão compacta e mais pequena do modelo "B".</p>
@@ -74,15 +74,93 @@
             <h5 class="header">Raspberry Pi Zero W (2017)</h5>
             <p class="regfont">Trata-se de uma versão do Raspberry Pi Zero atualizada, mas com WiFi, mantendo o seu pequeno tamanho.</p>
             <h5 class="header">Raspberry Pi 4 (2019-2020)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypi4b.jpg" alt="Uma imagem mostrando um Raspberry Pi 4B." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypi4b.jpg" alt="Uma imagem mostrando um Raspberry Pi 4B." class="image" width="500">
             <p class="regfont">Com um processador mais rápido que os anteriores, mais memória (1GB até 8GB!), rede Gigabit, WiFi! As especificações são fabulosas!</p>
             <p class="regfont">É de esperar de um computador moderno.</p>
             <h5 class="header">Raspberry Pi 400 (2020)</h5>
-            <img src="../../../assets/img/t2_01_raspberrypi400.jpg" alt="Uma imagem mostrando um Raspberry Pi 400." class="image">
+            <img src="../../../assets/img/t2_01_raspberrypi400.jpg" alt="Uma imagem mostrando um Raspberry Pi 400." class="image" width="500">
             <p class="regfont">É uma versão do Raspberry Pi 4 (4GB) dentro de um teclado, lembrando os computadores retro dos anos 80!</p>
             <p class="regfont">Extremamente útil para quem não quer andar a "roubar" o teclado do computador de casa, para quem não tem outro de sobra.</p>
             <h5 class="header">Raspberry Pi Zero 2W (2021)</h5>
             <p class="regfont">Outra versão atualizada do Raspberry Pi Zero, mas com um processador superior e com WiFi.</p>
+            <p class="regfont"></p>
+            <p class="regfont">Podes descobrir mais, e saber onde comprar no <a href="https://www.raspberrypi.com/products/">site oficial da Raspberry Pi</a>.</p>
+            <div class = "warningbox">
+                <p class="regfont">⚠ Já tenho um cartão com o sistema operativo! Salta para o passo 4.</p>
+            </div>
+            <h4 class = "header">Passo 3 - Colocar o Sistema Operativo no Cartão</h4>
+            <p class="regfont">Para colocar o Sistema Operativo no cartão que acabámos de fazer, temos que inseri-lo no nosso computador fixo ou portátil através de uma entrada SD,
+                utilizando qualquer adaptador micro SD para SD normal, que muitas vezes é incluido quando se compra o cartão. Caso o computador não tiver entrada SD é necessário um 
+                adaptador microSD para ficha USB. 
+                Esses adaptadores são muito fáceis de arranjar, encontrando-se em qualquer loja que venda material para câmeras digitais ou de vídeo.
+            </p>
+            <p class="regfont">Assim que o cartão estiver corretamente inserido no computador, utiliza-se uma ferramenta da Raspberry Pi chamada de "Imager", que permite a escrita do sistema operativo para o cartão SD.</p>
+            <p class="regfont">Pode ser descarregada a partir do site oficial por este <a href="https://www.raspberrypi.com/software/">link</a>.</p>
+            <p class="regfont">De seguida, entra-se na aplicação, e a partir dos menus, escolhe-se o sistema operativo recomendado, assim como o cartão SD a utilizar, e seleciona-se a opção "WRITE" no final.</p>
+            <p class="regfont">Qualquer dúvida que surja no processo pode ser esclarecida com um pequeno <a href="https://www.youtube.com/watch?v=ntaXWS8Lk34">vídeo</a> de configuração oficial.</p>
+            <h4 class = "header">Passo 4 - Ligar tudo</h4>
+            <p class="regfont">Para começar a ligar tudo, temos que seguir os seguintes passos:</p>
+            <ol>
+                <li>Ligar o cabo HDMI da televisão (ou monitor) ao Raspberry. No Raspberry Pi 4 e 400, o cabo HDMI é de ficha normal numa das pontas, mas de ficha pequena na outra. É um cabo de micro HDMI-HDMI.</li>
+                <li>Colocar o cartão SD com o sistema operativo na porta microSD que geralmente encontra-se por baixo dos componentes principais da placa</li>
+                <li>(opcional) Ligar o cabo Ethernet ao router, switch, powerline, hub ou porta Ethernet caso não se possa ligar à rede WiFi</li>
+                <li>Ligar um rato à porta USB</li>
+                <li>(opcional para Raspberry 400) Ligar um Teclado à porta USB</li>
+                <li>Ligar a fonte de alimentação oficial da tomada de casa ao Raspberry Pi, ou um carregador de telefone suportado (não recomendado)</li>
+                <li>Já está ligado! O Raspberry Pi não tem botão de ligar/desligar!</li>
+            </ol>
+            <h4 class = "header">Passo 5 - Instalar e Configurar o Sistema</h4>
+            <p class="regfont">Finalmente, chegaste até aqui... a parte mais simples.</p>
+            <p class="regfont">Responde a todas as perguntas que o sistema fizer, nomeadamente a linguagem, o tipo de teclado, a localização, etc...</p>
+            <p class="regfont">Se mentires a alguma destas perguntas o computador pode funcionar mal.</p>
+            <p class="regfont">Provávelmente, o sistema irá reiniciar.</p>
+            <h3 class = "header">Já tenho tudo configurado!</h3>
+            <h4 class = "header">Passo 1 - Teste Rápido</h4>
+            <p class="regfont">Parabéns, configuraste o teu primeiro Raspberry Pi.</p>
+            <p class="regfont">Antes de começarmos o tutorial a sério, vamos testar o computador para ver se está tudo em ordem.</p>
+            <p class="regfont">Utiliza o ponteiro do rato para chegares ao símbolo da framboesa no canto superior direito.</p>
+            <p class="regfont">É semelhante ao botão do menu Start do Windows, onde podemos encontrar as nossas aplicações.</p>
+            <p class="regfont">Aqui, elas estão categorizadas por tipo de programa. Encontra a opção "Programação" e clica num programa chamado "Thonny".</p>
+            <p class="regfont">O Thonny é um programa que permite fazer escrever código numa linguagem chamada Python. Mas não te assustes, o programa não morde...</p>
+            <p class="regfont">Assim que o programa abre, temos um quadrado branco onde podemos escrever o nosso código.</p>
+            <p class="regfont">Experimenta escrever a seguinte linha de texto:</p>
+            <div class="codeblock">
+                <p class="monofont">print("Olá, Mundo!")</p>
+            </div>
+            <p class="regfont">Para correr o código, basta carregar no botão verde que diz "Run" ou "Correr".</p>
+            <p class="regfont">Reparamos que, por baixo do código, aparece o texto que pediste que o computador escrevesse: "Olá, Mundo!"</p>
+            <h3 class = "header">Finalmente, vamos acender luzes.</h3>
+            <h4 class = "header">Passo 1 - Reunir o Material</h4>
+            <p class="regfont">Todo o material eletrónico necessário, encontra-se no AliExpress (vindo da China), na Robert Mauser (Portugal) ou até na PTRobotics e Electrofun (também Portugal):</p>
+            <ul>
+                <li>Uma breadboard, de qualquer tamanho</li>
+                <li>Uma Resistência de 220Ω</li>
+                <li>Um LED de qualquer cor</li>
+                <li>Dois cabo "jumper" macho-fémea</li>
+                <li>Um cabo "jumper" macho-macho</li>
+            </ul>
+            <h4 class = "header">Passo 2 - Montagem do circuito</h4>
+            <p class="regfont">Montar o circuito como na imagem seguinte:</p>
+            <img src="../../../assets/img/t2_01_blink_sch.png" alt="Imagem do esquema do circuito. (Pino três ligado a uma resistência, que por sua vez está ligado á pata maior do LED. A pata menor está ligada depois ao pino de Ground)" class = "img">
+            <div class = "warningbox">
+                <p class="regfont">⚠ Cuidado! O tamanho das patas do LED interessam! A pata maior está ligada à resistência e a pata menor está ligada ao fio preto.</p>
+                <p class="regfont">Assim como as pilhas dos brinquedos e afins, também os LED têm polos. O polo positivo corresponde á pata maior, e o polo negativo corresponde à pata mais pequena. Se invertermos o LED, podemos estragá-lo.</p>
+            </div>
+            <p class="regfont">O que acontece no circuito é simples - a eletricidade sai da placa pelo pino, percorrendo o fio e a breadboard até chegar à resistência. A resistência impede que os eletrões que fazem a eletricidade (uma espécie de bolinhas que não param quietas) 
+                passem com uma grande velocidade, assim como o "STOP" do sinal de trânsito. Estes eletrões, depois de ficarem mais lentos, passam pelo LED sem o estragar.</p> 
+            <p class="regfont">Se tivessem passado mais rapidamente, tinham destruido e queimado o LED, sabendo que lá dentro 
+                encontra-se um fio muito fininho, e nem todos os eletrões podem passar ao mesmo tempo. Porque quando passam com muita velocidade, esse fio começa a queimar, por não haver muito espaço para eles correrem. 
+            </p>
+            <p class="regfont">Quando passam pelo LED sem o estragar, o LED acende, pois os eletrões estão a correr, mas não estão a correr exageradamente rápido.</p>
+            <p class="regfont">Por fim, os eletrões voltam a casa na board através do pino do Ground.</p>
+            <p class="regfont">Neste circuito, o pino do ground é o mais importante, porque sem ele, os eletrões não quereriam percorrer o nosso circuito.</p>
+            <p class="regfont">Antes de chegar ao código, temos de entender como é que a breadboard funciona.</p>
+            <p class="regfont">A breadboard é uma placa feita de plástico que tem umas tiras de metal dentro dela.</p>
+            <p class="regfont">Se reparares, a breadboard tem duas colunas de pontos em cada lado mais comprido. Cada coluna dessas é uma tira de metal na vertical.</p>
+            <p class="regfont">Tem também uns números no interior, que representam filas. Cada número representa uma fila. Cada fila é uma tira de metal na horizontal.</p>
+            <p class="regfont">Com estas quatro colunas de metal e restantes filas, é possível montarmos um circuito sem precisarmos de muitos fios. É para isso que serve!</p>
+            <h4 class = "header">Passo 3 - O Código!</h4>
+            <p class="regfont"></p>
         </div>
         <div class = "menubox">
             <h2>Navegação</h2>

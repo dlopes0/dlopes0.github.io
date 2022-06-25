@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'IBM Plex Mono', monospace;
+    src: url(assets/fonts/IBM-Plex-Mono/IBMPlexMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'IBM Plex Sans JP', sans-serif;
     src: url(assets/fonts/IBM-Plex-Sans-JP/unhinted/IBMPlexSansJP-Regular.ttf) format('truetype');
 }
@@ -35,6 +40,7 @@ hr {
 li {
     font-family: 'IBM Plex Sans', sans-serif;
 }
+
 
 .languagebox {
     box-sizing: border-box;
@@ -69,6 +75,10 @@ li {
 
 .jpfont {
     font-family: 'IBM Plex Sans JP', sans-serif;
+}
+
+.monofont {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .imagebox {
@@ -145,5 +155,15 @@ li {
     margin-top: 5px;
     padding: 10px;
     background-color: #fff89e;
+}
+
+.codeblock {
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
 }
   
