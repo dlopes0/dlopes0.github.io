@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <head>
+        <title>Introdução | Raspberry Pi para Todos | O Grande Mundo da Eletrónica</title>
+        <link rel="stylesheet" href="topic2.css">
+    </head>
+    <body>
+        <h1>O Grande Mundo da Eletrónica</h1>
+        <div class = "menubar">
+            <div class = "menuitem">
+                <h4><a href="/index_pt.html">Página Principal</a></h4>
+            </div>
+            <div class = "menuitem">
+                <h4>Notícias</h4>
+            </div>
+            <div class = "menuitem">
+                <h4>Informação</h4>
+            </div>
+            <div class = "menuitem">
+                <h4>Mapa do Sítio</h4>
+            </div>
+        </div>
+        <hr>
+        <h2>Raspberry Pi para Todos</h2>
+        <div class = "bigtextbox">
+            <h2 class = "header">Blink</h2>
+            <h3 class = "lightheader">Acende, apaga. Acende, apaga.</h3>
+            <br>
+            <h3 class = "header">Antes de começar a pôr as mãos na massa...</h3>
+            <div class = "warningbox">
+                <p class="regfont">⚠ Verifica se tens o Raspberry Pi OS instalado no teu Raspberry antes de começar o tutorial!</p>
+            </div>
+            <h4 class = "header">Passo 1 - Cartão SD</h4>
+            <p class="regfont">Geralmente, quando se compra o Raspberry Pi, existem kits que já trazem de raíz um cartão SD com o sistema operativo pré-instalado.</p>
+            <p class="regfont">No entanto, muitas vezes esse cartão está incluido na compra da board, pelo que pode ser adquirido em qualquer loja ou até pode ser 
+                reutilizado de um telemóvel. Para os novos Raspberry Pi, têm que ser um cartão micro SD, daqueles pequeninos.
+            </p>
+            <p class="regfont">Podes adquirir num destes sites, se resides em Portugal:</p>
+            <ul>
+                <li>Cartão micro SD 64GB c/ Sistema pré instalado, na Robert Mauser (consultado a Junho de 2022 - 15,75€): <a href="https://mauser.pt/catalog/product_info.php?cPath=1667_2620_2957&products_id=047-3799">Link para o artigo na página da Robert Mauser</a></li>
+                <li>Cartão micro SD 32GB limpo, na Worten (consultado a Junho de 2022 - 8,99€): <a href="https://www.worten.pt/fotografia-e-drones/cartoes-de-memoria/cartoes-sd-micro-sd/cartao-de-memoria-integral-v10-inmsdh32g-100v10-32-gb-classe-10-uhs-1-6883728">Link para o artigo na página da Worten</a></li>
+                <li>Cartão micro SD 64GB limpo, na Worten (consultado a Junho de 2022 - 14,99€): <a href="https://www.worten.pt/fotografia-e-drones/cartoes-de-memoria/cartoes-sd-micro-sd/cartao-de-memoria-microsdxc-sandisk-ultra-64-gb-sd-adapter-cartao-de-memoria-classe-10-6914643">Link para o artigo na página da Worten</a></li>
+            </ul>
+            <p class="regfont">Numa maneira geral, qualquer cartão micro SD funciona.</p>
+            <div class = "warningbox">
+                <p class="regfont">⚠ E... espera lá! Estás a ler isto sem teres um Raspberry Pi!?! Não fujas que eu te ajudo a escolher...</p>
+                <p class="regfont">Segue o passo 2, caso contrário, se realmente já tiveres um Raspberry Pi, salta para o passo 3.</p>
+            </div>
+            <h4 class = "header">Passo 2 - Raspberry Pi</h4>
+            <p class="regfont">O que é um Raspberry Pi, perguntam vocês? Um Raspberry Pi é um computador do tamanho da palma da mão que permite fazer magia. Essencialmente magia.</p>
+            <p class="regfont">Possuem quarenta portinhas que podem ser controladas através de código, abrindo e fechando a passagem para a eletricidade. 
+                Com isto, podemos ligar e desligar luzes. Fazer rodar grandes rodas à velocidade que bem entendermos. Saber o quão frio está lá fora.
+                Determinar até, a distância entre duas paredes de casa. Ou talvez, um robot que se esquiva de obstáculos.</p>
+            <p class="regfont">Existem vários modelos de Raspberry Pi:</p>
+            <h5 class="header">Raspberry Pi (2012-2014)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypioriginal.jpg" alt="Uma imagem mostrando um Raspberry Pi original." class="image">
+            <p class="regfont">Sendo um modelo mais antigo (o primeiro!), não tem acesso à rede sem fios (por wireless), tem um processador mais fraquinho e menos memória (entre 256MB e 512MB).</p>
+            <p class="regfont">Tem também, ao contrário dos outros Raspberry Pi, 26 pinos - as tais portas controláveis que referi anteriormente.</p>
+            <p class="regfont">Já foi descontinuado, sendo agora muito dificil de encontrar e comprar.</p>
+            <h5 class="header">Raspberry Pi 2 (2015)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi2b.jpg" alt="Uma imagem mostrando um Raspberry Pi 2B." class="image">
+            <p class="regfont">Já tem um processador superior em comparação ao computador anterior, e tem muito mais memória (1GB, duas vezes 512MB ou até quatro vezes 256MB!).</p>
+            <p class="regfont">Assim como os Raspberry Pi mais modernos, já tem quarenta pinos ao contrário do anterior.</p>
+            <h5 class="header">Raspberry Pi Zero (2015)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypizero.jpeg" alt="Uma imagem mostrando um Raspberry Pi Zero." class="image">
+            <p class="regfont">É uma versão ultra pequena do primeiro Raspberry Pi. E como tal, tem o mesmo processador, a mesma quantidade de memória, mas tem quarenta pinos.</p>
+            <p class="regfont">A semelhança do primeiro, não tem ligação WiFi.</p>
+            <p class="regfont">Infelizmente, sendo muito pequeno não tem porta de rede para ligarmos ao router de casa ou até mesmo a uma ficha de rede algures em casa.</p>
+            <h5 class="header">Raspberry Pi 3 (2016-2018)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi3bplus.png" alt="Uma imagem mostrando um Raspberry Pi 3B+." class="image">
+            <p class="regfont">Tem três versões com o mesmo processador melhorado em comparação aos anteriores - o B, o A+ e o B+.</p>
+            <p class="regfont">A versão mais antiga é a "B". Possui 1GB de memória, porta de rede, WiFi, e 40 pinos.</p>
+            <p class="regfont">A versão mais compacta é a "A". Possui 512MB de memória, não tem porta de rede, mas tem WiFi, e 40 pinos. É uma versão compacta e mais pequena do modelo "B".</p>
+            <p class="regfont">A versão mais recente e melhorada é a "B+". Possui 1GB de memória, porta de rede Gigabit (internet mais rápida), WiFi, e 40 pinos.</p>
+            <h5 class="header">Raspberry Pi Zero W (2017)</h5>
+            <p class="regfont">Trata-se de uma versão do Raspberry Pi Zero atualizada, mas com WiFi, mantendo o seu pequeno tamanho.</p>
+            <h5 class="header">Raspberry Pi 4 (2019-2020)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi4b.jpg" alt="Uma imagem mostrando um Raspberry Pi 4B." class="image">
+            <p class="regfont">Com um processador mais rápido que os anteriores, mais memória (1GB até 8GB!), rede Gigabit, WiFi! As especificações são fabulosas!</p>
+            <p class="regfont">É de esperar de um computador moderno.</p>
+            <h5 class="header">Raspberry Pi 400 (2020)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi400.jpg" alt="Uma imagem mostrando um Raspberry Pi 400." class="image">
+            <p class="regfont">É uma versão do Raspberry Pi 4 (4GB) dentro de um teclado, lembrando os computadores retro dos anos 80!</p>
+            <p class="regfont">Extremamente útil para quem não quer andar a "roubar" o teclado do computador de casa, para quem não tem outro de sobra.</p>
+            <h5 class="header">Raspberry Pi Zero 2W (2021)</h5>
+            <p class="regfont">Outra versão atualizada do Raspberry Pi Zero, mas com um processador superior e com WiFi.</p>
+        </div>
+        <div class = "menubox">
+            <h2>Navegação</h2>
+            <div class = "menucontrol">
+                <div class = "menuitem">
+                    <h5 class = "regfont">❮ Tutorial 01 - Blink</h5>
+                </div>
+                <div class = "menuitem">
+                    <h5 class = "regfont">Lista de Tutoriais</h5>
+                </div>
+                <div class = "menuitem">
+                    <h5 class = "regfont"><a href="t2_01_blink_pt.html">Tutorial 02 - Semáforo ❯</a></h5>
+                </div>
+            </div>  
+        </div>
+        <div class = "languagebox">
+            <h2>Idiomas</h2>
+            <div class = "languages">
+                <div class = "language">
+                    <h5 class = "regfont"><a href="t2_00_introduction.html">English</a></h5>
+                </div>
+                <div class = "language">
+                    <h5 class = "regfont"><a href="t2_00_introduction_pt.html">Português</a></h5>
+                </div>
+                <div class = "language">
+                    <h5 class = "jpfont"><a href="t2_00_introduction_ja.html">日本語</a></h5>
+                </div>
+            </div>
+        </div> 
+        <div class ="regfont">
+            <p>Copyright(C) 2022 David Lopes</p>
+            <p>Todas as páginas com intuito educacional pertencem ao domínio público. Todo o trabalho é licenciado sob Creative Commons CC BY-SA 4.0</p>
+            <p>Não tem de cumprir com os termos da licença relativamente a elementos do material que estejam no domínio público ou cuja utilização seja permitida por uma exceção ou limitação que seja aplicável.</p>
+            <p>Não são dadas quaisquer garantias. A licença pode não lhe dar todas as autorizações necessárias para o uso pretendido. Por exemplo, outros direitos, tais como direitos de imagem, de privacidade ou direitos morais, podem limitar o uso do material.</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons - Atribuição-CompartilhaIgual 4.0 Internacional</a>.
+        </div>
+    </body>
+</html>
