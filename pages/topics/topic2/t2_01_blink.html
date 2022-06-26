@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+    <head>
+        <title>01 Blink | Raspberry Pi for Everyone | The Great World of Electronics</title>
+        <link rel="stylesheet" href="topic2.css">
+    </head>
+    <body>
+        <h1>The Great World of Electronics</h1>
+        <div class = "menubar">
+            <div class = "menuitem">
+                <h4><a href="/index.html">Home</a></h4>
+            </div>
+            <div class = "menuitem">
+                <h4>News</h4>
+            </div>
+            <div class = "menuitem">
+                <h4>Info</h4>
+            </div>
+            <div class = "menuitem">
+                <h4>Sitemap</h4>
+            </div>
+        </div>
+        <hr>
+        <h2>Raspberry Pi for Everyone</h2>
+        <div class = "bigtextbox">
+            <h2 class = "header">Blink</h2>
+            <h3 class = "lightheader">On, off. On, off.</h3>
+            <img src="../../../assets/img/t2_01_ledinside.png" alt="An image of an LED." class="image" height="100">
+            <br>
+            <h3 class = "header">Before starting</h3>
+            <div class = "warningbox">
+                <p class="regfont">⚠ Make sure if you have the Raspberry Pi OS installed on your Raspberry Pi. If you haven't any idea about what I'm talking about, please - go on.</p>
+            </div>
+            <h4 class = "header">Step 1 - SD Card</h4>
+            <p class="regfont">Normally, there are some kits that already include the Raspberry Pi, with the bonus of an SD card with a preinstalled operating system.</p>
+            <p class="regfont">That card is often not included when you purchase the board. Being that so, you can buy it from any store or you can take it from other cellphone you may or may not own. For the new Raspberry Pi, you'll need a Micro SD card, the ones that are really small.</p>
+            <p class="regfont">You can get it from Amazon, if you live anywhere on Planet Earth:</p>
+            <ul>
+                <li>SAMSUNG EVO Select Micro SD Card 64GB, on Amazon (last checked on June 2022 - $11.99): <a href="https://www.amazon.com/SAMSUNG-Adapter-microSDXC-MB-ME64KA-AM/dp/B09B1F9L52/ref=sxin_13_pa_sp_search_thematic_sspa?content-id=amzn1.sym.b245e49f-68a4-4489-b1f9-81f4034255f5%3Aamzn1.sym.b245e49f-68a4-4489-b1f9-81f4034255f5&cv_ct_cx=Micro%2BSD%2BCard&keywords=Micro%2BSD%2BCard&pd_rd_i=B09B1F9L52&pd_rd_r=e49578a0-12b6-4223-a7f6-68bdf81e0d2b&pd_rd_w=rxJ4j&pd_rd_wg=s8a6p&pf_rd_p=b245e49f-68a4-4489-b1f9-81f4034255f5&pf_rd_r=E85BBT1D2J12KCG1CVZC&qid=1656195105&sr=1-1-a73d1c8c-2fd2-4f19-aa41-2df022bcb241-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQUpSWk5ORlY4VDUxJmVuY3J5cHRlZElkPUEwNDE4MTA2M0lKNjdRQk0yWUFDQiZlbmNyeXB0ZWRBZElkPUEwMzg5ODIxSklCS05IMjFPQ01RJndpZGdldE5hbWU9c3Bfc2VhcmNoX3RoZW1hdGljJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1">Link for the item on Amazon</a></li>
+            </ul>
+            <p class="regfont">For most of the cases, any Micro SD card will do.</p>
+            <div class = "warningbox">
+                <p class="regfont">⚠ Wa- wait a minute! You're reading this without owning a Raspberry Pi yet!?! Don't go away... I'll help you out!</p>
+                <p class="regfont">Follow step number 2. Otherwise, if you do already own a Raspberry Pi, skip to step number 3.</p>
+            </div>
+            <h4 class = "header">Step 2 - Raspberry Pi</h4>
+            <p class="regfont">What is a Raspberry Pi, you ask? A Raspberry Pi is a computer with the size of the palm of your hand that allows one to do magic. Essentially magic.</p>
+            <p class="regfont">It has forty "doors" in total that can be controlled by coding them, opening and closing the passage for electricity 
+                With this, we can turn lights on and off. Make big wheels turn at any speed we want. Know how cold is outside.
+                It can even determine the distance between two walls at home. Or maybe a robot that can dodge obstacles.</p>
+            <p class="regfont">There are various Raspberry Pi models:</p>
+            <h5 class="header">Raspberry Pi (2012-2014)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypioriginal.jpg" alt="An image showing a original Raspberry Pi." class="image" width="500">
+            <p class="regfont">Being the oldest model (the first, actually!), it doesn't have access to WiFi, it has a rather slow processor and less memory (between 256MB and 512MB).</p>
+            <p class="regfont">It has also, in opposite to the other Raspberry Pies, twenty-six pins - those controllable "doors" that I talked about before.</p>
+            <p class="regfont">It has been discontinued, being very hard to find and get one.</p>
+            <h5 class="header">Raspberry Pi 2 (2015)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi2b.jpg" alt="An image showing a Raspberry Pi 2B." class="image" width="500">
+            <p class="regfont">It has a superior processor compared to the previous computer, and it has a lot more memory (1GB, two times 512MB or four times 256MB!).</p>
+            <p class="regfont">Just like the modern Raspberry Pi, it has forty pins, unlike the previous one.</p>
+            <h5 class="header">Raspberry Pi Zero (2015)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypizero.jpeg" alt="An image showing a Raspberry Pi Zero." class="image" width="500">
+            <p class="regfont">It's an ultra small version of the first Raspberry Pi. And just like the original, it has the same processor, the same memory size, but this one has forty pins.</p>
+            <p class="regfont">But just like the first one, it can't connect to WiFi.</p>
+            <p class="regfont">Unfortunately, being very small, it hasn't got an Ethernet port to connect to the Home Router or an Ethernet Wall Socket.</p>
+            <h5 class="header">Raspberry Pi 3 (2016-2018)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi3bplus.png" alt="An image showing a Raspberry Pi 3B+." class="image" width="500">
+            <p class="regfont">It has three versions with the same improved processor in comparison to the previous - B, A+ and B+.</p>
+            <p class="regfont">The oldest version is the "B" one. It has over a 1GB of memory, Ethernet port, WiFi support, and forty pins.</p>
+            <p class="regfont">The most compact version is the "A" one. It has 512GB of memory, lacks an Ethernet port, but it has WiFi support and forty pins. It's a way smaller and compact version of the model "B".</p>
+            <p class="regfont">The most recent and improved is the model "B+". It has 1GB of memory, Gigabit Ethernet port (way faster Ethernet), WiFi support and forty pins.</p>
+            <h5 class="header">Raspberry Pi Zero W (2017)</h5>
+            <p class="regfont">It's an updated Raspberry Pi Zero version, but with WiFi support and keeping its small size.</p>
+            <h5 class="header">Raspberry Pi 4 (2019-2020)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi4b.jpg" alt="An image showing a Raspberry Pi 4B." class="image" width="500">
+            <p class="regfont">With a way faster processor compared to the other Raspberry Pies, more memory (from 1GB to 8GB!), Gigabit Ethernet and WiFi support! The specs are great!</p>
+            <p class="regfont">It is expected from a modern computer.</p>
+            <h5 class="header">Raspberry Pi 400 (2020)</h5>
+            <img src="../../../assets/img/t2_01_raspberrypi400.jpg" alt="An image showing a Raspberry Pi 400." class="image" width="500">
+            <p class="regfont">It is a version of the Raspberry Pi 4 (4GB) inside a keyboard, reassembling the looks of an 80s retro computer.</p>
+            <p class="regfont">Extremely useful for someone that doesn't want to "steal" the home computers' keyboard, those that haven't a spare one.</p>
+            <h5 class="header">Raspberry Pi Zero 2W (2021)</h5>
+            <p class="regfont">Another updated version of the Raspberry Pi Zero, but with a far better processor plus WiFi support.</p>
+            <p class="regfont"></p>
+            <p class="regfont">You can find out more, and know where to buy at the <a href="https://www.raspberrypi.com/products/">Raspberry Pi official website</a>.</p>
+            <div class = "warningbox">
+                <p class="regfont">⚠ I do already have an SD card with the operating system! Skip to step 4.</p>
+            </div>
+            <h4 class = "header">Step 3 - Putting the Operating System into the Card</h4>
+            <p class="regfont">To put the operating system we just bought, we must insert it on our computer or laptop through an SD port,
+                using any Micro SD to SD adapter, that is often included when you buy the Micro SD card. In case the computer doesn't have an SD port, a Micro SD to USB adapter is required.
+                These adapters are very easy to come by, since you can find them in any store that normally sell acessories for digital or video cameras.
+            </p>
+            <p class="regfont">As soon as the card is correctly inserted on the computer, you will need to use an official Raspberry Pi tool called "Imager", that allows the Operating System to be written on the card.</p>
+            <p class="regfont">It can be downloaded through the official site at this <a href="https://www.raspberrypi.com/software/">link</a>.</p>
+            <p class="regfont">Then, you enter the application and through the menus, you select the recommended operating system, as well as selecting the SD Card that we're going to use, and finally click "WRITE".</p>
+            <p class="regfont">Any problem you encounter can be solved by watching this small official setup <a href="https://www.youtube.com/watch?v=ntaXWS8Lk34">video</a>.</p>
+            <h4 class = "header">Step 4 - Connecting everything</h4>
+            <p class="regfont">To start connecting everything, you must follow these steps:</p>
+            <ol>
+                <li>Connect the HDMI cable from the TV or monitor to the Raspberry. On Raspberry Pi 4 and 400, the HDMI cable has a regular plug at one end, and a smaller funnier plug at the other. It's called a Micro HDMI-HDMI cable. Google it.</li>
+                <li>Insert the SD card with the operating system at the Micro SD card that you can find at the bottom of the board</li>
+                <li>(optional) Connect the Ethernet cable to the router, switch, powerline, hub or Ethernet port in case you can't connect to any WiFi network</li>
+                <li>Connect a USB Mouse to a USB port</li>
+                <li>(optional for Raspberry 400) Connect a USB Keyboard to a USB port</li>
+                <li>Connect the official power supply to the Raspberry Pi, or a regular phone charger (not recommended)</li>
+                <li>It is already on! The Raspberry Pi does not have an on/off button!</li>
+            </ol>
+            <h4 class = "header">Step 5 - Installing and Configuring the System</h4>
+            <p class="regfont">Finally, you just got to the easy part...</p>
+            <p class="regfont">Answer all of the questions that the system will ask, related to the system language, type of keyboard, location, et cetera...</p>
+            <p class="regfont">If you end up lying at any of these questions, the computer may start malfunctioning.</p>
+            <p class="regfont">Probably, the system will reboot itself.</p>
+            <h3 class = "header">I've got everything configured!</h3>
+            <h4 class = "header">Step 1 - Quick Test</h4>
+            <p class="regfont">Congratulations, you just configured your first Raspberry Pi.</p>
+            <p class="regfont">Before we can start the real tutorial, we will test the computer to see if everything is working well.</p>
+            <p class="regfont">Use the mouse pointer to reach the most top-left corner of the screen to click on the Raspberry icon.</p>
+            <p class="regfont">It works in a similar way to the Windows' Start Menu button, where we can find our installed apps.</p>
+            <p class="regfont">Here, they're categorized in specific groups. Find the option "Programming" and click on a program called "Thonny".</p>
+            <p class="regfont">Thonny is a program that allows one to write code in a language called Python. But don't freak out, it won't bite you for sure...</p>
+            <p class="regfont">As soon as the program pops up, we find a big white square, where we can start wrting our code.</p>
+            <p class="regfont">Type the folowing text:</p>
+            <div class="codeblock">
+                <p class="monofont">print("Hello, World!")</p>
+            </div>
+            <p class="regfont">To run the code, you just need to press the green button that says "Run".</p>
+            <p class="regfont">We find that, below our code, it shows the text we made the computer type - "Hello, World!"</p>
+            <h3 class = "header">Finally, we're going to turn on some lights.</h3>
+            <h4 class = "header">Step 1 - Gathering the Material</h4>
+            <p class="regfont">All the following material can be found on AliExpress or Amazon:</p>
+            <ul>
+                <li>A breadboard, at any size</li>
+                <li>A 220Ω resistor</li>
+                <li>Any LED</li>
+                <li>Two male-female jumper cables</li>
+                <li>One male-male jumper cable</li>
+            </ul>
+            <h4 class = "header">Step 2 - Circuit Assembly</h4>
+            <p class="regfont">Assemble the circuit just like in the following image:</p>
+            <img src="../../../assets/img/t2_01_blink_sch.png" alt="Image of the circuit schematics. (Pin five connected to a resistor that is connected to the larger leg of the LED. The smaller leg is then connected to the Ground pin.)" class = "image">
+            <div class = "warningbox">
+                <p class="regfont">⚠ Warning! The size of the LED legs do matter! The larger leg is connected to the resistor and the smaller leg is connected to the black cable.</p>
+                <p class="regfont">Just like the batteries that you use for toys and such, the LEDs have positive and negative sides. The positive side corresponds to the largest leg, and the negative side corresponds to the shortest leg. If we invert the LED, we may ruin it for good.</p>
+            </div>
+            <p class="regfont">What happens in the circuit is simple - the electricity leaves the board through the pin, going through the cable and breadboard until finding the resistor. The resistor makes sure that the electrons that make the electricity (a sort of funny, but annoying particles that can't stop moving) go through it at a great speed, 
+               just like the Stop sign at a road. After they become slower, these electrons pass through the LED without ruining it.</p> 
+            <p class="regfont">If they had been passing quicker, they would have destroyed and burned the LED, given that inside it  
+                there's a thin cable, and not every electron can pass at the same time. Because when they run at a great speed, that cable begins to melt, because they start getting much less space to run. 
+            </p>
+            <p class="regfont">When they get through the LED without ruining it, the LED turns on, because the electrons are running safely and passing through the LED at a lower rate.</p>
+            <p class="regfont">At the end, the electrons go back home at the board through the ground pin.</p>
+            <p class="regfont">In this circuit, the ground pin is the most important, because without it, the electrons wouldn't want to run through our circuit.</p>
+            <p class="regfont">Before getting into the code, we must understand how a breadboard works.</p>
+            <img src="../../../assets/img/t2_01_breadboardexplained.jpg" alt = "Image of a breadboard" class = "image" width="500">
+            <p class="regfont">A breadboard is a board made out of plastic, that has thin metal strips inside it. These strips are used to conduct electricity.</p>
+            <p class="regfont">At a closer look, the breadboard has two columns of holes in each side. Each column has a vertical metal strip below it.</p>
+            <p class="regfont">It has also numbers on the interior, that represent rows. Each number represent a number. Each row has metal strip below it.</p>
+            <p class="regfont">With these four metal columns and remaining rows, it is possible to build a circuit without needing lots of cables.</p>
+            <h4 class = "header">Step 3 - The Code!</h4>
+            <p class="regfont"></p>
+        </div>
+        <div class = "menubox">
+            <h2>Navegação</h2>
+            <div class = "menucontrol">
+                <div class = "menuitem">
+                    <h5 class = "regfont"><a href="t2_00_introduction.html">❮ Introduction</a></h5>
+                </div>
+                <div class = "menuitem">
+                    <h5 class = "regfont">List of Tutorials</h5>
+                </div>
+                <div class = "menuitem">
+                    <h5 class = "regfont">Tutorial 02 - Traffic Lights ❯</h5>
+                </div>
+            </div>  
+        </div>
+        <div class = "languagebox">
+            <h2>Languages</h2>
+            <div class = "languages">
+                <div class = "language">
+                    <h5 class = "regfont"><a href="t2_01_blink.html">English</a></h5>
+                </div>
+                <div class = "language">
+                    <h5 class = "regfont"><a href="t2_01_blink_pt.html">Português</a></h5>
+                </div>
+                <div class = "language">
+                    <h5 class = "jpfont"><a href="t2_00_introduction_ja.html">日本語</a></h5>
+                </div>
+            </div>
+        </div> 
+        <div class ="regfont">
+            <p>Copyright(C) 2022 David Lopes</p>
+            <p>All educational pages from this website are public domain. All of the work is licensed under Creative Commons CC BY-SA 4.0</p>
+            <p>You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.</p>
+            <p>No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+        </div>
+    </body>
+</html>
